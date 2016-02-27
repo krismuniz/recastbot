@@ -27,17 +27,18 @@ ai.process(textToProcess, userData, respondFn)
 
       // defaults...
       let location = userData.location
-      let datetime = 'today'
+      let datetime = userData.localDatetime
 
-      // get entities from Recast.AI
-      if (entities.location) location = entities.location[0].value
-      if (entities.datetime) time = entities.datetime[0].value
+      // get entity objects from Recast.AI
+      if (entities.location) location = entities.location[0]
+      if (entities.datetime) datetime = entities.datetime[0]
 
       // get weather status as {string}
-      let weather = getWeather(location, datetime)
+      let weather = getWeather([location.lat, location.lng], datetime.value)
 
       // send response to user
-      respondFn('The weather in ' + location + ' ' + datetime + ' is ' + weather)
+      respondFn('The weather in ' + location.raw + ' ' +
+        datetime.raw + ' is ' + weather)
     } else {
       // ask user for time and place
       respondFn('Hi, ' + userData.firstName + '! Weather? where?')
