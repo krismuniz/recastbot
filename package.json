@@ -1,0 +1,28 @@
+{
+  "name": "recastbot",
+  "version": "0.0.1",
+  "description": "Build applications that understand natural language using Recast.AI's API",
+  "main": "lib/index.js",
+  "dependencies": {
+    "request": "^2.69.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krismuniz/recastbot.git"
+  },
+  "keywords": [
+    "natural language",
+    "AI",
+    "bots",
+    "human language",
+    "NLP",
+    "NLU",
+    "Recast.AI"
+  ],
+  "author": "Kristian Muñiz <contact@krismuniz.com> (http://www.krismuniz.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/krismuniz/recastbot/issues"
+  },
+  "homepage": "https://github.com/krismuniz/recastbot#readme"
+}
