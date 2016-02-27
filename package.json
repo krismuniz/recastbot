@@ -1,7 +1,7 @@
 {
   "name": "recastbot",
-  "version": "0.0.1",
-  "description": "Build applications that understand natural language using Recast.AI's API",
+  "version": "0.0.101",
+  "description": "Semantic interface for Natural Language Processing via Recast.AI",
   "main": "lib/index.js",
   "dependencies": {
     "request": "^2.69.0"
