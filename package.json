@@ -1,6 +1,6 @@
 {
   "name": "recastbot",
-  "version": "0.0.102",
+  "version": "0.0.103",
   "description": "Semantic interface for Natural Language Processing via Recast.AI",
   "main": "lib/index.js",
   "dependencies": {

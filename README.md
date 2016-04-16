@@ -217,7 +217,7 @@ ai.process('How are you?', userData, respondFn)
 
 #### Bug Reports & Feature Requests
 
-Something does not work as expected or perhaps you think this module needs a feature? Please [open an issue](https://github.com/krismuniz/slash-command/issues/new) using GitHub's [issue tracker](https://github.com/krismuniz/slash-command/issues).
+Something does not work as expected or perhaps you think this module needs a feature? Please [open an issue](https://github.com/krismuniz/recastbot/issues/new) using GitHub's [issue tracker](https://github.com/krismuniz/recastbot/issues).
 
 #### Developing
 
