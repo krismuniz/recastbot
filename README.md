@@ -1,5 +1,5 @@
 # recastbot
-[![Code-Style:Standard](https://img.shields.io/badge/code%20style-standard-green.svg?style=flat-square)](http://standardjs.com/)
+[![Recast.AI API:v1](https://img.shields.io/badge/Recast.ai%20API-v1-yellow.svg?style=flat-square)](http://api.recast.ai/v1/) [![Code-Style:Standard](https://img.shields.io/badge/code%20style-standard-green.svg?style=flat-square)](http://standardjs.com/)
 [![License:MIT](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](http://opensource.org/licenses/MIT)
 
 `recastbot` helps you build applications that understand natural language using [Recast.AI's](https://recast.ai) *Natural Language Processing & Understanding API*.
@@ -65,8 +65,6 @@ To use `recastbot` you need to [sign up to Recast.AI](https://recast.ai/signup) 
 
 This documentation assumes that you know how Recast.AI works. See the [Recast.AI docs](https://man.recast.ai) for more information.
 
-**Note**: Recast.AI is currently (as of the writing of this document) in private beta. That means you won't have immediate access to the API; be patient.
-
 ## Installation
 
 Installing `recastbot` is as simple as installing any other [npm](https://npmjs.com) module:
@@ -113,14 +111,14 @@ bot.hears(intentName, handlerFn)
 
 Use the `.hears()` method to register an intent handler. The first argument is the name of the intent and the second argument is the handler (a callback function). The handler function is called when the specified intent is matched.
 
-One or more arguments are passed to the callback function: the first one is always the response from Recast.AI and the rest (if any) are the ones passed through `.process()`
+One or more arguments are passed to the callback function: the first one is always the results from Recast.AI and the rest (if any) are the ones passed through `.process()`
 
 Real-world Example:
 ```js
 // ...
 let bot = ai.process('Hi, RecastBot!', userData, respondFn)
 
-bot.hears('greetings', (response, userData, respondFn) => {
+bot.hears('greetings', (results, userData, respondFn) => {
   // handler function for 'greetings' intent
   respondFn('Hello, ' + userData.firstName + '!')
 })
